@@ -22,10 +22,10 @@ cursor = connection.cursor()
 # cursor.execute('SELECT * FROM "Album" WHERE "ArtistId" = %s', [51])
 
 # Query 6 tracks from albumid 51 artist records
- cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"]) 
+cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"]) 
 
 # fetch multipul results
- results = cursor.fetchall()
+results = cursor.fetchall()
 
 # fetch single result
 # results = cursor.fetchone()
